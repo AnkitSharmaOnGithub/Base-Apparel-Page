@@ -107,4 +107,31 @@ span.light-gray {
   color: #3e52a3;
 }
 
+@media (min-width: 601px) {
+  .container {
+    display: grid;
+    grid-template-areas: "l l g g", "i i g g", "i i g g", "i i g g";
+  }
+
+  .logo {
+    grid-area: l;
+  }
+
+  .intro {
+    grid-area: i;
+  }
+
+  .graphic {
+    grid-area: g;
+  }
+
+  img.desktop {
+    display: block;
+  }
+
+  img.mobile {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
