@@ -7,7 +7,7 @@
 @mixin default-styles {
   font : {
     size: 1rem;
-    family: "Josefin Sans", sans-serif;
+    family: $font;
     weight: 400;
   }
   color: $neutral;

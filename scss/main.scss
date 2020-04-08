@@ -66,20 +66,38 @@ span.light-gray {
 
 #input_email {
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  border: 1px solid #ce9797;
+  border-radius: 2rem;
 }
 
+#input_email::placeholder {
+  font: {
+    family: $font;
+    weight: 600;
+  }
+  color: $primary1;
+}
 
+.form {
+  position: relative;
+}
 
+.proceed {
+  background: linear-gradient($gradient2);
+  border: 1px solid $primary1;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
 
+  position: absolute;
+  top: 30px;
+  right: 0px;
+}
 
-
-
-
-
-
-
-
+.proceed > img {
+  max-height: 15px;
+}
 
 .attribution {
   font-size: 11px;
