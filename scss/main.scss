@@ -1,0 +1,90 @@
+@import "mixins";
+@import "variables";
+
+* {
+  @include reset-styles;
+}
+
+body {
+  @include default-styles;
+}
+
+.container {
+  padding-top: 2rem;
+  @include d-flex(column);
+}
+
+.logo {
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  order: -2;
+}
+
+.graphic {
+  order: -1;
+  width: 100%;
+}
+
+img.desktop {
+  display: none;
+  width: 100%;
+}
+
+img.mobile {
+  display: block;
+  width: 100%;
+}
+
+.intro {
+  margin-top: 4rem;
+  padding: 0rem 2rem;
+}
+
+.intro > h1 {
+  font : {
+    size: 3.6rem;
+    weight: 600;
+  }
+  text: {
+    align: center;
+    transform: uppercase;
+  }
+  line-height: 1;
+  letter-spacing: 6px;
+}
+
+span.light-gray {
+  color: $primary1;
+  font-weight: 300;
+}
+
+.intro > p {
+  color: $primary1;
+  margin-top: 2rem;
+}
+
+#input_email {
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

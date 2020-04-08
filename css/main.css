@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: #413a3a;
+  line-height: 1.7;
+}
+
+.container {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  order: -2;
+}
+
+.graphic {
+  order: -1;
+  width: 100%;
+}
+
+img.desktop {
+  display: none;
+  width: 100%;
+}
+
+img.mobile {
+  display: block;
+  width: 100%;
+}
+
+.intro {
+  margin-top: 4rem;
+  padding: 0rem 2rem;
+}
+
+.intro > h1 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 6px;
+}
+
+span.light-gray {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+.intro > p {
+  color: #ce9797;
+  margin-top: 2rem;
+}
+
+#input_email {
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=main.css.map */
