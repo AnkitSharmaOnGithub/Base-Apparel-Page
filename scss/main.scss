@@ -106,6 +106,14 @@ span.light-gray {
   max-height: 15px;
 }
 
+p.status.error{
+  color: #ff0000;
+}
+
+p.status.success{
+  color: green;
+}
+
 .attribution {
   font-size: 1rem;
   font-weight: 600;

@@ -1,28 +1,23 @@
-let form = document.querySelector('.form');
-let email = document.querySelector('.input_email').value;
-let proceed = document.querySelector('.proceed');
-let status = document.querySelector('.status');
+let form = document.querySelector(".form");
 
-form.addEventListener('submit',e => {
-    e.preventDefault();
-    if(validate_mail(email)){
-        proceed.classList.remove('error');
-        proceed.classList.add('success');
-        setMessage('Thank you! Check your email to confirm your email subscription.');
-    }
-    else{
-        proceed.classList.remove('success');
-        proceed.classList.add('error');
-        setMessage('Please enter valid email.');
-    }
+let email = document.querySelector("#input_email");
+let status = document.querySelector(".status");
 
-})
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-function validate_mail(){
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test()
-}
+  if (!validateEmail(email.value)) {
+    status.classList.add("error");
+    status.classList.remove("success");
+    status.innerHTML = "Please provide a valid email";
+  } else {
+    status.classList.remove("error");
+    status.classList.add("success");
+    status.innerHTML = "Thanks you";
+  }
+});
 
-function setMessage(value){
-    status.innerText = value;
+function validateEmail(email) {
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
 }
