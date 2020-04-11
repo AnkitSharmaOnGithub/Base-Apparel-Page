@@ -86,6 +86,10 @@ span.light-gray {
   position: relative;
 }
 
+.form > label {
+  display: none;
+}
+
 .proceed {
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   border: 1px solid #ce9797;
@@ -161,3 +165,5 @@ p.status.success {
     display: none;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
