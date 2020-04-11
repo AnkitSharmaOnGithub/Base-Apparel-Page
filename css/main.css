@@ -10,6 +10,7 @@ body {
   font-weight: 400;
   color: #413a3a;
   line-height: 1.7;
+  background-image: url("../images/bg-pattern-desktop.svg");
 }
 
 .container {
@@ -72,6 +73,7 @@ span.light-gray {
   margin: 2rem auto;
   border: 1px solid #ce9797;
   border-radius: 2rem;
+  outline: none;
 }
 
 #input_email::placeholder {
@@ -87,11 +89,16 @@ span.light-gray {
 .proceed {
   background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   border: 1px solid #ce9797;
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   border-radius: 2rem;
   position: absolute;
   top: 30px;
   right: 0px;
+  outline: none;
+}
+
+.proceed:hover {
+  box-shadow: 2px 2px 10px #ce9797;
 }
 
 .proceed > img {

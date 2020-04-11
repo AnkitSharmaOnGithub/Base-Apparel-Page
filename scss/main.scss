@@ -7,6 +7,7 @@
 
 body {
   @include default-styles;
+  background-image: url('../images/bg-pattern-desktop.svg');
 }
 
 .container {
@@ -70,6 +71,7 @@ span.light-gray {
   margin: 2rem auto;
   border: 1px solid #ce9797;
   border-radius: 2rem;
+  outline: none;
 }
 
 #input_email::placeholder {
@@ -87,12 +89,17 @@ span.light-gray {
 .proceed {
   background: linear-gradient($gradient2);
   border: 1px solid $primary1;
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   border-radius: 2rem;
 
   position: absolute;
   top: 30px;
   right: 0px;
+  outline: none;
+}
+
+.proceed:hover{
+  box-shadow: 2px 2px 10px $primary1;
 }
 
 .proceed > img {
