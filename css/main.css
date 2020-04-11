@@ -107,10 +107,12 @@ span.light-gray {
 
 p.status.error {
   color: #ff0000;
+  margin-top: 0;
 }
 
 p.status.success {
   color: green;
+  margin-top: 0;
 }
 
 .attribution {
