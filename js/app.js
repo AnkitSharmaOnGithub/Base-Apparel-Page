@@ -9,11 +9,11 @@ form.addEventListener("submit", (e) => {
   if (!validateEmail(email.value)) {
     status.classList.add("error");
     status.classList.remove("success");
-    status.innerHTML = "Please provide a valid email";
+    status.innerHTML = "Please enter a valid email address";
   } else {
     status.classList.remove("error");
     status.classList.add("success");
-    status.innerHTML = "Thanks you";
+    status.innerHTML = "Thank you! Check your email to confirm your email subscription.";
   }
 });
 
